@@ -12,3 +12,76 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #000000;
+}
+
+.grid-item{
+  flex-grow: 1;
+}
+
+/* Desktop */ 
+@media (min-width: 769px ) {
+  .grid-item {
+    width: 33.33%; 
+  }
+}
+
+/* Tablet */ 
+@media (max-width: 768px) and (min-width:480px) {
+  .grid-item {
+    width: 50%; 
+  }
+}
+
+/* mobile */ 
+@media (max-width: 479px) and (min-width:320px) {
+  .grid-item {
+    width: 100%; 
+  }
+}
+
+.card{
+  margin: 10px ;
+  border: 1px solid #333;
+  height:590px;
+}
+
+.card-img {
+  margin: 10px;
+}
+
+.card img {
+  width:100%;
+  border: 1px solid #444;
+  height: 230px;
+}
+
+.card h2{
+  font-weight: bold;
+  font-size:40px;
+}
+
+.card .best-seller{
+  width:150px ;
+  background-color: #f83737;
+  color:#fff;
+  font-size:16px;
+  padding:5px;
+  font-weight: bold;
+}
+
+.card price{
+  font-size: 20px;
+  color: #444;
+  font-weight:bold;
+}
+
+.card button{
+border:5px solid rgb(166, 255, 166);
+font-size:20px;
+background-color: #fff;
+}
